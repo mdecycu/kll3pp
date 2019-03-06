@@ -2,7 +2,17 @@
 <h4>專案倉儲</h4>
 <p><a href="https://github.com/mdecourse/kll3pp">https://github.com/mdecourse/kll3pp</a> </p>
 <h4>網際內容管理</h4>
-<p><a href="https://github.com/chiamingyen/cmsimfly">https://github.com/chiamingyen/cmsimfly</a> </p><h1>機械設計</h1>
+<p><a href="https://github.com/chiamingyen/cmsimfly">https://github.com/chiamingyen/cmsimfly</a> </p>
+<h1>3D 列印</h1>
+<p>使用者進行 3D 列印之前, 必須利用 Computer Aided Design (CAD) 3D 繪圖套件建立零件的實體模型, 並以 STL格式轉出後, 利用輔助製造程式配合列印製程規劃, 產生列印路徑後, 取得對應的 Gcode 後, 將列印製程規劃 (切片) 檔案輸入列印機後驅動列印頭進行列印.</p>
+<p>亦即過程中需 要:</p>
+<ol>
+<li>CAD 套件 - 建立實體模型後, 轉為 STL檔案格式, 例如: <a href="http://solvespace.com">Solvespace</a>, <a href="https://www.freecadweb.org/">FreeCAD</a> 與 <a href="https://www.onshape.com/">Onshape</a>.</li>
+<li>CAM 套件 - 依據列印零件的需求, 安裝列印製程規劃後, 轉為 Gcode, 例如: <a href="https://slic3r.org/">https://slic3r.org/</a> </li>
+<li>列印控制 - 最後將 Gcode 轉入列印控制器後執行零件列印, 例如: <a href="https://github.com/MarlinFirmware/Marlin">https://github.com/MarlinFirmware/Marlin</a> </li>
+</ol>
+<h4>CAM 與列印控制套件</h4>
+<p><a href="http://www.makerbot.com">http://www.makerbot.com</a> 所建立的列印物件檢視、切片與列印控制器程式, 稱為MakerWare (<a href="http://www.makerbot.com/makerware">http://www.makerbot.com/makerware</a> ). 而 <a href="https://ultimaker.com/">Ultimaker</a> 則稱類似的套件為 Cura (<a href="http://wiki.ultimaker.com/Cura">http://wiki.ultimaker.com/Cura</a>). 其他類似的套件工具來有 Repetier suite<br/>(<a href="http://www.repetier.com">http://www.repetier.com</a>) 以及 Printrun (<a href="http://reprap.org/wiki/Printrun">http://reprap.org/wiki/Printrun</a>). </p><h1>機械設計</h1>
 <h4>電腦輔助機械設計:</h4>
 <p>Onshape: <a href="https://www.onshape.com/">https://www.onshape.com/</a> </p>
 <p>Solvespace: <a href="http://solvespace.com">http://solvespace.com</a> </p>
@@ -34,7 +44,10 @@
 <h4>程式語言</h4>
 <p><a href="http://mde.tw/python-course/">http://mde.tw/python-course/</a> </p>
 <h4>序列資料傳送</h4>
-<p><a href="https://github.com/kmolLin/Pyquino">https://github.com/kmolLin/Pyquino</a> </p><h1>Python</h1><h2>Python 安裝</h2>
+<p><a href="https://github.com/kmolLin/Pyquino">https://github.com/kmolLin/Pyquino</a> </p><h1>CMSimfly 更新</h1>
+<p>將 KLL3PP 的內容管理系統更新, 具有靜態內容關鍵字搜尋功能.</p>
+<p>更新時, 除了替換 flaskapp.py 程式檔案外, 還需要加入 static 目錄中的 tipuesearch 目錄, 其中為靜態資料搜尋用的 Javascript 程式碼.</p>
+<h1>Python</h1><h2>Python 安裝</h2>
 <h4>Windows 操作系統</h4>
 <p>利用瀏覽器連結至 <a href="https://www.python.org/downloads/">https://www.python.org/downloads/</a> 後, 從 <a href="https://www.python.org/downloads/windows/">https://www.python.org/downloads/windows/</a> 下載 <a href="https://www.python.org/ftp/python/3.7.2/python-3.7.2rc1-amd64.exe">https://www.python.org/ftp/python/3.7.2/python-3.7.2rc1-amd64.exe</a>, 在 Windows 10 64 位元環境中安裝, 即可從 cmd 命令列中, 以 python 指令使用互動式指令環境.</p>
 <p>可攜 Python 系統: <a href="https://drive.google.com/open?id=1qSnGb4NBmfGG0jGVNfQJX_9TNVweIdFW">p37-18.12.7z</a> (下載解開壓縮檔案後, 以 start.bat 啟動後即可使用)</p>
